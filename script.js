@@ -54,9 +54,13 @@ days.innerHTML = day;
 function refreshTime(){
     setTimeout(displayTime, 1000);
 }
+
+// refresh min
 function refreshMin(){
     setTimeout(displayMin, 60000);
 }
+
+// refresh hour
 function refreshHour(){
     setTimeout(displayHour, 1000 * 60 * 60);
 }
@@ -83,17 +87,16 @@ displayTime();
 // display current hour
 function displayHour(){
     // display hours
-    hours.innerHTML = hour;
+    hours.innerHTML = hour.toLocaleString();
     refreshHour();
 }
 displayHour();
 
 
-
 // display current minute
 function displayMin(){
     // display mins
-    mins.innerHTML = min;
+    mins.innerHTML = min.toLocaleString();
     refreshMin();
 }
 displayMin();
