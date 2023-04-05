@@ -50,7 +50,7 @@ p, h1, div, article, a, li {padding: 0; margin: 0; text-decoration: none; list-s
     background-repeat: no-repeat;
     background-size: cover;
     object-fit: cover;
-    /* height: 100vh; */
+    height: 100vh;
     width: 100%;
 }
 
@@ -229,6 +229,11 @@ footer {
         font-size: .75rem;
     }
 
+    .hero {
+        height: 100%;
+        overflow-y: hidden;
+    }
+
     .hero_header-text {
         font-size: 2rem;
     }
@@ -261,5 +266,16 @@ footer {
     .hours-mins_container {
         padding: 1em;
         gap: .5em;
+    }
+
+    .hero_subtext {
+        font-size: .85rem;
+        width: 60%;
+        margin: 0 auto;
+        line-height: 150%;
+    }
+
+    .footer_text {
+        font-size: .7rem;
     }
 }
