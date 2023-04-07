@@ -31,6 +31,10 @@ body {
     margin: 0;
     padding: 0;
     color: #fff;
+    height: 100vh;
+    width: 100%;
+    background: rgb(0,203,81);
+    background: linear-gradient(30deg, rgb(2, 61, 26) 0%, rgb(2, 58, 24) 0%, rgba(0,59,24,1) 0%, rgb(0, 32, 16) 10%, rgba(0,0,0,1) 75%, rgba(6,64,29,1) 100%, rgb(2, 59, 25) 100%);
 }
 
 p, h1, div, article, a, li {padding: 0; margin: 0; text-decoration: none; list-style: none;}
@@ -44,12 +48,10 @@ p, h1, div, article, a, li {padding: 0; margin: 0; text-decoration: none; list-s
 }
 
 /* hero section */
-.hero {
-    background: rgb(0,203,81);
-    background: linear-gradient(30deg, rgb(2, 61, 26) 0%, rgb(2, 58, 24) 0%, rgba(0,59,24,1) 0%, rgb(0, 32, 16) 10%, rgba(0,0,0,1) 75%, rgba(6,64,29,1) 100%, rgb(2, 59, 25) 100%);
+/* .hero {
     height: 100vh;
     width: 100%;
-}
+} */
 
 .time_container {
     border: 1px solid #042F15;
