@@ -15,7 +15,7 @@ const start2023 = new Date(2023, 0, 1);
 
 
 // calculate months
-const calcMonthsPassed = (date1, date2) => Math.trunc(Math.abs((date1 - date2) / (1000 * 60 * 60 * 24 * 24))  );
+const calcMonthsPassed = (date1, date2) => Math.trunc(Math.abs((date1 - date2) / (1000 * 60 * 60 * 24 * 24)) -1);
 
 // calculate days
 const calcDaysPassed = (date1, date2) => Math.trunc(Math.abs((date1 - date2) / (1000 * 60 * 60 * 24))  - 1);
@@ -70,7 +70,11 @@ function displayTime(){
     const now = new Date();
 
     // display current time & date
-    headerTime.innerHTML = `${now.toDateString()} \u00A0 - \u00A0 ${now.getHours()} : ${(now.getMinutes()<10?'0':'') + now.getMinutes()} : ${(now.getSeconds()<10?'0':'') + now.getSeconds()}`;
+    headerTime.innerHTML = 
+    `${now.toDateString()} \u00A0 - \u00A0 
+    ${(now.getHours()<10?'0':'') + now.getHours()} : 
+    ${(now.getMinutes()<10?'0':'') + now.getMinutes()} : 
+    ${(now.getSeconds()<10?'0':'') + now.getSeconds()}`;
 
     // display hours
     // hours.innerHTML = hour;
