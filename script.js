@@ -15,7 +15,7 @@ const start2023 = new Date(2023, 0, 1);
 
 
 // calculate months
-const calcMonthsPassed = (date1, date2) => Math.trunc(Math.abs((date1 - date2) / (1000 * 60 * 60 * 24 * 24)) -1);
+const calcMonthsPassed = (date1, date2) => Math.trunc(Math.abs((date1 - date2) / (1000 * 60 * 60 * 24 * 24)) -2);
 
 // calculate days
 const calcDaysPassed = (date1, date2) => Math.trunc(Math.abs((date1 - date2) / (1000 * 60 * 60 * 24))  - 1);
