@@ -177,10 +177,14 @@ p, h1, div, article, a, li {padding: 0; margin: 0; text-decoration: none; list-s
 }
 
 .send_email {
-    color: #00CB51;
+    color: #a3f9c5;
     font-family: 'clash_display_regular';
     text-align: center;
     text-decoration: underline;
+}
+
+.send_email:hover {
+    color: #fff;
 }
 
 footer {
